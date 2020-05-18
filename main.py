@@ -8,9 +8,9 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/salvador")
+@app.route("/review")
 def salvador():
-    return "Hello, Salvador"
+    return "Hello, Review"
 
 
 if __name__ == "__main__":

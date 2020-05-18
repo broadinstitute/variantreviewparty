@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Variant Review Party</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/static/assets/img/favicon/favicon.ico">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS Global Compulsory -->
+  <link rel="stylesheet" href="/static/assets/vendor/bootstrap/bootstrap.css">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="/static/assets/vendor/font-awesome/css/all.min.css">
+
+  <!-- CSS Space Template -->
+  <link rel="stylesheet" href="/static/assets/css/theme.css">
+</head>
+<body>
+
+<!-- JS Global Cumpulsory -->
+<script src="/static/assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="/static/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+<script src="/static/assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="/static/assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+<!-- JS Implementing Plugins -->
+<script src="/static/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+<script src="/static/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="/static/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="/static/assets/vendor/custombox/dist/custombox.min.js"></script>
+<script src="/static/assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
+<script src="/static/assets/vendor/player.js/dist/player.min.js"></script>
+
+<!-- JS Space -->
+<script src="/static/assets/js/hs.core.js"></script>
+<script src="/static/assets/js/components/hs.header.js"></script>
+<script src="/static/assets/js/components/hs.unfold.js"></script>
+<script src="/static/assets/js/components/hs.validation.js"></script>
+<script src="/static/assets/js/helpers/hs.focus-state.js"></script>
+<script src="/static/assets/js/components/hs.malihu-scrollbar.js"></script>
+<script src="/static/assets/js/components/hs.modal-window.js"></script>
+<script src="/static/assets/js/components/hs.show-animation.js"></script>
+<script src="/static/assets/js/components/hs.video-player.js"></script>
+<script src="/static/assets/js/components/hs.go-to.js"></script>
+
+
+<!-- JS Implementing Plugins -->
+<!--<script src="/static/assets/vendor/player.js/dist/player.js"></script>-->
+
+<!-- JS Space -->
+<!--<script src="/static/assets/js/components/hs.video-player.js"></script>-->
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of video player
+    $.HSCore.components.HSVideoPlayer.init('.js-inline-video-player');
+  });
+</script>
+
+<!-- Hero Section -->
+<div class="container space-2 space-4-top--lg space-3-bottom--lg">
+  <div class="row align-items-lg-center">
+    <div class="col-lg-5 mb-9 mb-lg-0">
+      <div class="pr-lg-4">
+        <!-- Title -->
+        <div class="mb-5">
+          <h1>Variant Review Party</h1>
+          <p>Because manually reviewing variants is a pain best shared with others.</p>
+        </div>
+        <!-- End Title -->
+
+        <!-- Pricing -->
+        <div class="card-deck card-sm-gutters-2">
+          <div class="card border-0">
+            <div class="card-body p-0">
+              <div class="custom-control custom-radio custom-control-inline form-selector-modern">
+                <input type="radio" id="productShippingSelector1" class="custom-control-input form-selector-modern__input" name="productShippingSelector" checked>
+                <label class="custom-control-label form-selector-modern__label" for="productShippingSelector1">
+                  <span class="d-block mt-n1">
+                    <span class="h3 d-inline-block text-primary mb-1">Private</span>
+                    <small class="text-secondary">data</small>
+                  </span>
+                  <small class="d-block text-muted">I want to review variants in a private dataset.</small>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-body p-0">
+              <div class="custom-control custom-radio custom-control-inline form-selector-modern">
+                <input type="radio" id="productShippingSelector2" class="custom-control-input form-selector-modern__input" name="productShippingSelector">
+                <label class="custom-control-label form-selector-modern__label" for="productShippingSelector2">
+                  <span class="d-block mt-n1">
+                    <span class="h3 d-inline-block text-primary mb-1">Public</span>
+                    <small class="text-secondary">data</small>
+                  </span>
+                  <small class="d-block text-muted">I want to help build a labeled structural variant training set.</small>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Pricing -->
+
+        <a class="btn btn-block btn-primary" href="/review">Start Reviewing Variants</a>
+      </div>
+    </div>
+
+    <div class="col-lg-7">
+      <!-- Video Block -->
+      <div class="bg-white shadow rounded p-2">
+        <div id="youTubeVideoPlayer" class="u-video-player">
+          <!-- Cover Image -->
+          <img class="img-fluid u-video-player__preview" src="/static/assets/img/hero/sisko_itsreal_static.webp" alt="Image">
+          <!-- End Cover Image -->
+
+          <!-- Play Button -->
+          <a class="js-inline-video-player u-video-player__btn u-video-player__centered" href="javascript:;"
+             data-parent="youTubeVideoPlayer"
+             data-target="youTubeVideoIframe"
+             data-classes="u-video-player__played">
+            <span class="u-video-player__icon">
+              <span class="fa fa-play u-video-player__icon-inner"></span>
+            </span>
+          </a>
+          <!-- End Play Button -->
+
+          <!-- Video Iframe -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe id="youTubeVideoIframe" class="embed-responsive-item" src="https://www.youtube.com/embed/Mouaf5xhOl8"></iframe>
+          </div>
+          <!-- End Video Iframe -->
+        </div>
+      </div>
+      <!-- End Video Block -->
+    </div>
+  </div>
+</div>
+<!-- End Hero Section -->
+
+</body>
+</html>

@@ -26,7 +26,7 @@ module.exports = (grunt)->
       assets:
         options:
           livereload: true
-        files: ['index.html', 'assets/*']
+        files: ['old.html', 'assets/*']
 
     connect:
       server:
